@@ -1,0 +1,20 @@
+Test Case ID,Functional Requirement,Test Scenario,Test Steps,Expected Result,Priority,Test Type,Status
+TC-1,FR-02 User Registration,Register with Valid Details,Open Registration page ? Enter valid user details ? Click Register,Account is created successfully and success message is displayed,High,Smoke,Pass
+TC-2,FR-02 User Registration,Register with Empty Fields,Open Registration page ? Leave required fields empty ? Click Register,Validation messages are displayed for required fields,High,Negative,Pass
+TC-3,FR-02 User Registration,Register with Existing Email,Open Registration page ? Enter an existing email ? Click Register,Error message indicating email already exists,High,Negative,Pass
+TC-4,FR-04 Login & Authentication,Login with Valid Credentials,Open Login page ? Enter valid username/email and password ? Click Login,User is logged in successfully and redirected to homepage,High,Smoke,Pass
+TC-5,FR-04 Login & Authentication,Login with Invalid Password,Open Login page ? Enter valid username and incorrect password ? Click Login,Invalid credentials error message is displayed,High,Negative,Pass
+TC-6,Browse Book Catalog,Browse Books,Open homepage ? Select a category ? Browse available books,List of books is displayed correctly,Medium,Regression,Pass
+TC-7,Search Books,Search by Title,Enter a valid book title in the search box ? Click Search,Matching books are displayed,Medium,Regression,Pass
+TC-8,Search Books,Search Invalid Keyword,Enter an invalid keyword ? Click Search,"""No books found"" message is displayed",Medium,Negative,Pass
+TC-9,FR-03 View Book Details,View Book Details,Select a book from the catalog,"Book title, author, price, description, rating and availability are displayed",Medium,Regression,Pass
+TC-10,Add Books to Cart,Add Book to Cart,Select a book ? Click Add to Cart,Book is added to shopping cart and cart count updates,High,Smoke,Pass
+TC-11,Add Books to Cart,Update Quantity,Open Shopping Cart ? Change quantity ? Update Cart,Quantity is updated and total price recalculates,Medium,Regression,Pass
+TC-12,Add Books to Cart,Remove Book,Open Shopping Cart ? Remove selected book,Selected book is removed from cart,Medium,Regression,Pass
+TC-13,FR-05 Checkout Process,Successful Checkout,Proceed to Checkout ? Enter payment details ? Complete payment,Order is placed successfully,High,Smoke,Pass
+TC-14,FR-05 Checkout Process,Checkout Without Payment,Proceed to Checkout ? Leave payment incomplete ? Submit order,Payment validation message is displayed,High,Negative,Fail
+TC-15,FR-01 Order Confirmation,Order Confirmation Email,Complete successful checkout,Order confirmation page and confirmation email are generated,Medium,Regression,Blocked
+TC-16,Order History,View Order History,Login ? Navigate to Order History,Previous orders are displayed,Medium,Regression,Pass
+TC-17,Order Tracking,Track Order,Open Order History ? Select an order,Current order status is displayed,Medium,Regression,Pass
+TC-18,NFR-01 Availability,Availability,Access the application during the testing period,Application remains available without unexpected downtime,Critical,Performance,Pass
+TC-19,NFR-02 Scalability,Scalability,Simulate or evaluate multiple concurrent users,System supports many users without significant performance degradation,High,Performance,Pass
