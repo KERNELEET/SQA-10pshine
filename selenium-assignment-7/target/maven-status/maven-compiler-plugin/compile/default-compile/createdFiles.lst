@@ -1,0 +1,4 @@
+pages\ProductPage.class
+pages\LoginPage.class
+utils\BasePage.class
+pages\HomePage.class
